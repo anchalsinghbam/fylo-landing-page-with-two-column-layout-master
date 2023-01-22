@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(243, 87%, 12%);
+}
+
+header {
+  padding: 2rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+button {
+  width: 100%;
+  background: hsl(224, 93%, 58%);
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: inherit;
+
+  margin-top: 1em;
+}
+
+input {
+  width: 100%;
+  padding: 0.9em;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #7a77a7;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header */
+
+.logo {
+  width: 10rem;
+}
+
+.nav {
+  display: none;
+}
+
+.hamburger {
+  width: 2.5rem;
+}
+
+/* Hero section */
+
+.hero {
+  display: grid;
+  gap: 3rem;
+  padding: 5em 0;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/*Middle Section*/
+
+.middle-section {
+  background-color: hsl(240, 75%, 98%);
+}
+
+.middle {
+  padding: 5em 0;
+  display: grid;
+  gap: 5em;
+}
+
+.middle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.middle-text p {
+  text-align: left;
+}
+
+.flex,
+.fylos {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.fylos {
+  justify-content: center;
+}
+
+.fylo {
+  /* border-bottom: 1px solid hsl(170, 45%, 43%); */
+  font-size: 1.1rem;
+  color: hsl(170, 45%, 43%);
+}
+
+.arrow {
+  width: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.15);
+}
+
+.quotes {
+  width: 1.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.about {
+  font-size: 0.8rem;
+}
+
+/* Last section */
+
+.last-section {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);
+}
+
+.access {
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.access__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/* Footer */
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+}
+
+.footer {
+  padding: 3em 0;
+  display: grid;
+  gap: 2em;
+}
+
+.footer-col p {
+  line-height: 3;
+}
+
+.logo2 {
+  width: 10rem;
+  margin-bottom: 1.5em;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.social-icon {
+  width: 1.5em;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col a {
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+@media (min-width: 35em) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__list {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav__link {
+    color: hsl(243, 87%, 12%);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .nav__link:hover,
+  .nav__link:focus {
+    opacity: 0.75;
+  }
+
+  .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+}
+
+@media (min-width: 47em) {
+    body {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 57em) {
+  body {
+    text-align: left;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__text {
+    grid-row: 1/2;
+  }
+
+  .hero__button {
+    display: flex;
+    gap: 1em;
+  }
+
+  .btn1 {
+    margin-top: 0;
+  }
+
+  .middle {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .middle__img {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .middle-text {
+    grid-row: 1/2;
+  }
+
+  .fylos {
+    justify-content: flex-start;
+  }
+
+  .access {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .access__text {
+    max-width: 30rem;
+  }
+
+  .footer {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
